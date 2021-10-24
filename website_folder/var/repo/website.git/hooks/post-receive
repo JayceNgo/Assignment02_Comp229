@@ -1,0 +1,6 @@
+#!/bin/sh
+git --work-tree=path_to_website_folder --git-dir=path_to_git_directory checkout -f Authentic Sneakers
+chmod +x post-receive
+git init
+git remote add Assignment1 ssh://Assignment1@http://localhost:3000/homepage/path_to_git_directory
+

@@ -1,0 +1,81 @@
+ <!-- Filename: contact.ejs
+Student's name : Ngo Tran Manh Hiep.
+Student ID: 301121528.
+Date: 2nd Oct 2021  -->
+
+<% include partials/header.ejs %>
+   
+<h2 style="text-align: center;">Contact Information</h2>
+
+<table border="1" style="margin-left: 550px; margin-top:50px; text-align: center; ">
+ 
+    <tr>
+       
+        <td>email</td>
+        <td>tngo65@my.centennialcollege.ca</code></td>
+        
+    </tr>
+    <tr>
+        <td>Phone number </td>
+        <td>437-991-9715</td>       
+        
+    </tr>
+
+<main>
+    <form action="mailto:tngo65@my.centennial.college.ca" method="post">
+        <table style="width: 100%; margin-left: 400px;margin-top: 50px;">
+            <tr>
+                <td class="fieldLabel">First Name:</td>
+                <td>
+                    <input name="txtFirstName" size="25" tabindex="1" type="text"></td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">Last
+                    Name:</td>
+                <td> <input name="txtLastName" size="25" tabindex="3" type="text"></td>
+            </tr>
+            
+            <tr>
+                <td class="fieldLabel">Email:</td>
+                <td> <input name="txtEmail" size="25" tabindex="5" type="text" placeholder = "Example@humbercollege.ca" required>(Example@humbercollege.ca) </td>
+            </tr>
+            
+            <tr>
+                <td class="fieldLabel">Date Of Birth:</td>
+                <td>
+                    <label>
+                        <input type = "date" /> 
+                           (yyyy-mm-dd)
+                     </label></td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">Telephone:</td>
+                <td> <input name="txtEmail" size="25" tabindex="5" type="text" placeholder = "###-####-####" required>(###-####-####) </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">Gender: </td>
+                <td>
+                    <input name="optGender" tabindex="11" type="radio" value="M">M
+                    <input name="optGender" tabindex="13" type="radio" value="F">F</td>
+            </tr>
+            
+            
+            <tr>
+                <td class="fieldLabel">&nbsp;Your Message:
+                </td>
+                <td>
+                    <textarea cols="50" name="txtSpecialReq" rows="7"
+                        tabindex="37"placeholder = "---Please show your Evalution ( e.g. Good, High quality,... etc.)---"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="fieldLabel">
+                    <input name="btnSubmit" tabindex="39" type="submit" value="Evalute Now"></td>
+                <td><input name="btnReset" tabindex="41" type="reset" value="Reset"></td>
+            </tr>
+        
+    </form>
+</main>
+
+  <% include partials/footer.ejs %>
+
